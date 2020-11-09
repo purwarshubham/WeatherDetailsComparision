@@ -29,7 +29,7 @@ extent.html -> report with screenshot.
 How to run project : 
 
 1. run testNG.xml file through intelliJ
-2. execute command "mvn clean install", through cli (firstly navigate to pom.xml file)
+2. run command "mvn clean install", through cli (firstly navigate to pom.xml file)
 
 Additional Info : 
 
