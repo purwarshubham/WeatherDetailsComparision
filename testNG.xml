@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Weather Reports comparision" thread-count="2" parallel="tests">
+
+    <listeners>
+        <listener class-name="ExtentReportListener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+    <test name="Bengaluru Weather Comparison">
+        <parameter name="cityName" value="Bengaluru"></parameter>
+        <parameter name="tempDiff" value="40"></parameter>
+        <parameter name="humidityDiff" value="100"></parameter>
+        <parameter name="windSpeedDiff" value="100"></parameter>
+        <classes>
+            <class name="WeatherPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Kanpur Weather Comparison ">
+        <parameter name="cityName" value="Kanpur"></parameter>
+        <parameter name="tempDiff" value="40"></parameter>
+        <parameter name="humidityDiff" value="40"></parameter>
+        <parameter name="windSpeedDiff" value="80"></parameter>
+        <classes>
+            <class name="WeatherPageTest"/>
+        </classes>
+    </test>
+
+</suite>

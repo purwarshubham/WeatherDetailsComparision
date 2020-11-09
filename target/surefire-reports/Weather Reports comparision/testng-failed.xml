@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Weather Reports comparision]" parallel="tests">
+  <listeners>
+    <listener class-name="ExtentReportListener.ExtentTestNGITestListener"/>
+  </listeners>
+  <test thread-count="2" verbose="0" name="Kanpur Weather Comparison (failed)" parallel="tests">
+    <parameter name="tempDiff" value="3"/>
+    <parameter name="cityName" value="Kanpur"/>
+    <parameter name="windSpeedDiff" value="20"/>
+    <parameter name="humidityDiff" value="20"/>
+    <classes>
+      <class name="WeatherPageTest">
+        <methods>
+          <include name="validateWindSpeedValueOfAPIResponseAgainstWebResult" invocation-numbers="0"/>
+          <include name="quitDriver"/>
+          <include name="validateTemperatureValueOfAPIResponseAgainstWebResult" invocation-numbers="0"/>
+          <include name="validateWebResponse"/>
+          <include name="validateHumidityValueOfAPIResponseAgainstWebResult" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="validateAPIResponse"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- WeatherPageTest -->
+    </classes>
+  </test> <!-- Kanpur Weather Comparison (failed) -->
+  <test thread-count="2" verbose="0" name="Bengaluru Weather Comparison(failed)" parallel="tests">
+    <parameter name="tempDiff" value="40"/>
+    <parameter name="cityName" value="Bengaluru"/>
+    <parameter name="windSpeedDiff" value="80"/>
+    <parameter name="humidityDiff" value="40"/>
+    <classes>
+      <class name="WeatherPageTest">
+        <methods>
+          <include name="validateWindSpeedValueOfAPIResponseAgainstWebResult" invocation-numbers="0"/>
+          <include name="quitDriver"/>
+          <include name="validateTemperatureValueOfAPIResponseAgainstWebResult" invocation-numbers="0"/>
+          <include name="validateHumidityValueOfAPIResponseAgainstWebResult" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="validateAPIResponse"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- WeatherPageTest -->
+    </classes>
+  </test> <!-- Bengaluru Weather Comparison(failed) -->
+</suite> <!-- Failed suite [Weather Reports comparision] -->

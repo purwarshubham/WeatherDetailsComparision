@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 59.658 sec <<< FAILURE! - in TestSuite
+validateWebResponse(WeatherPageTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at WeatherPageTest.validateWebResponse(WeatherPageTest.java:60)
+
+validateAPIResponse(WeatherPageTest)  Time elapsed: 1.737 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at WeatherPageTest.validateAPIResponse(WeatherPageTest.java:76)
+
+validateAPIResponse(WeatherPageTest)  Time elapsed: 1.738 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at WeatherPageTest.validateAPIResponse(WeatherPageTest.java:76)
+
+validateTemperatureValueOfAPIResponseAgainstWebResult(WeatherPageTest)  Time elapsed: 2.957 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at WeatherPageTest.validateTemperatureValueOfAPIResponseAgainstWebResult(WeatherPageTest.java:92)
+
+validateTemperatureValueOfAPIResponseAgainstWebResult(WeatherPageTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at WeatherPageTest.validateTemperatureValueOfAPIResponseAgainstWebResult(WeatherPageTest.java:92)
+
+validateHumidityValueOfAPIResponseAgainstWebResult(WeatherPageTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at WeatherPageTest.validateHumidityValueOfAPIResponseAgainstWebResult(WeatherPageTest.java:99)
+
+validateHumidityValueOfAPIResponseAgainstWebResult(WeatherPageTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at WeatherPageTest.validateHumidityValueOfAPIResponseAgainstWebResult(WeatherPageTest.java:99)
+
+validateWindSpeedValueOfAPIResponseAgainstWebResult(WeatherPageTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at WeatherPageTest.validateWindSpeedValueOfAPIResponseAgainstWebResult(WeatherPageTest.java:106)
+
+validateWindSpeedValueOfAPIResponseAgainstWebResult(WeatherPageTest)  Time elapsed: 3.467 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at WeatherPageTest.validateWindSpeedValueOfAPIResponseAgainstWebResult(WeatherPageTest.java:106)
+
