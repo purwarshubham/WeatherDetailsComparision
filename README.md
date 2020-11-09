@@ -12,12 +12,12 @@ main folder :
       config folder -> contains config.properties, where we stored our UI and API properties.
       constants folder -> contains Endpoint.java class, that contains API endpoints. 
       extentreport folder -> contains java files that will be useful for configuring extent report.
-      model folder -> contains pojo classes, that can hold data.
+      model folder -> contains pojo classes.
       pages folder -> contains all common components and individual pages.
       util folder -> contains testUtil class which have common utilities methods.
       
 resources : 
-      log4j.properties -> for using logs 
+      log4j.properties -> for log configurations 
       
 test folder :
       contains page test classes.
